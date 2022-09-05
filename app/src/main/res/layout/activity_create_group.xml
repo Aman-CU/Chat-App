@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="#eee"
+        tools:context=".CreateGroupActivity">
+
+        <!-- Group Icon -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/groupIconIv"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_outline_account_circle_24" />
+
+        <!-- Group Title -->
+        <EditText
+            android:id="@+id/groupTitleEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Group Title"
+            android:layout_below="@id/groupIconIv"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" />
+
+        <!-- Group Description -->
+        <EditText
+            android:id="@+id/groupDescEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:gravity="top"
+            android:inputType="textMultiLine|textCapSentences"
+            android:background="@color/white"
+            android:hint="Group Description"
+            android:layout_below="@id/groupTitleEt"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" />
+
+        <!-- Floating Action Button - Create Group -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/createGroupBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item android:id="@+id/create_group"
+        android:title="Create Group"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_create_group" />
+  <item android:id="@+id/add_person" android:title="Add Participant"
+      app:showAsAction="always"
+      android:icon="@drawable/ic_add_person"/>
+</menu>

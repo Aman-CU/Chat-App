@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_bg"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:id="@+id/sent_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:ems="10"
+            android:text="This is sent message"/>
+
+        <TextView
+            android:id="@+id/sent_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:30 PM"
+            android:textSize="12sp"
+            android:layout_marginRight="7dp"
+            android:layout_alignRight="@+id/sent_txt"
+            android:layout_alignBottom="@+id/sent_txt"
+            android:textColor="@color/grey"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout> -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="200dp"
+android:layout_marginTop="10dp"
+android:background="@drawable/bg_outgoing_bubble"
+android:padding="5dp">
+
+
+
+<TextView
+    android:id="@+id/sent_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="The message"
+    android:textColor="@color/black"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"/>
+
+<TextView
+    android:id="@+id/sent_msg_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Time"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@id/sent_txt"
+    android:layout_marginEnd="15dp"
+    android:textSize="12sp"/>
+
+
+</RelativeLayout>

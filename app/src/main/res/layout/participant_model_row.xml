@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:contentPadding="3dp"
+    android:layout_marginTop="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/participant_profile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/circle_shape"
+            android:src="@drawable/ic_outline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/participant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Person Name"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/participant_profile"/>
+
+        <TextView
+            android:id="@+id/participant_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Person Email"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/participant_profile"
+            android:layout_below="@+id/participant_name"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/participant_profile"
+            android:layout_below="@+id/participant_email"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

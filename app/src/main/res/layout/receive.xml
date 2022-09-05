@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_bg"
+        android:backgroundTint="@color/teal_700"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:id="@+id/receive_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:padding="15dp"
+            android:text="hi"/>
+
+        <TextView
+            android:id="@+id/receive_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:30 PM"
+            android:textSize="12sp"
+            android:layout_marginLeft="7dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/receive_txt"
+            android:textColor="@color/white"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout> -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginEnd="200dp"
+android:layout_marginTop="10dp"
+android:background="@drawable/bg_incoming_bubble"
+android:padding="5dp">
+
+    <TextView
+        android:id="@+id/name_TvR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Name"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold" />
+
+
+<TextView
+    android:id="@+id/receive_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="The message"
+    android:textColor="@color/black"
+    android:layout_below="@+id/name_TvR"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"/>
+
+<TextView
+    android:id="@+id/receive_msg_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Time"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@id/receive_txt"
+    android:layout_marginEnd="5dp"
+    android:textSize="12sp"/>
+
+
+
+
+
+
+</RelativeLayout>
